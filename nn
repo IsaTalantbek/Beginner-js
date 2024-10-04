@@ -1,0 +1,13 @@
+let Products = [
+    { name: 'Phone', price: 17000, have: true },
+    { name: 'Phone', price: 9000, have: true },
+    { name: 'Phone', price: 11000, have: false },
+];
+
+let price = prompt('Введите ваш бюджет на телефон');  // 
+price = Number(price);
+
+let search = Products.filter(product => product.price <= price && product.have); // 
+console.log(search);
+
+//Код просит ввести ваш бюджет и находит продукты которые подходят по вашему бюджету, а так-же проверяет доступен ли этот продукт.
