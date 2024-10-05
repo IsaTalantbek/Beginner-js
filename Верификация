@@ -1,0 +1,34 @@
+function abc() {
+    let name = prompt('Введите свое имя')
+    
+    if (name === 'Isa') {
+        console.log('Сигма разраб тут')
+    } else {
+        console.log('Здравствуйте, ' + name + '!')
+    }
+
+    let age = prompt('Введите свой возраст')
+    
+    if (age <= 18) {
+        console.log('Доступ запрещен')
+    } else {
+        console.log('Возраст успешно сохранен!')
+        account.verify = true  // Присваиваем значение account.verify
+    }
+    
+    return { name, age, verify: account.verify } // Возвращаем объект
+}
+
+abc()
+
+if (account.verify === true) {
+    console.log('Добро пожаловать!')
+} else {
+    console.log('Извините, отказано в доступе')
+}
+
+//Проверка данных введенные пользователем
+
+
+
+
