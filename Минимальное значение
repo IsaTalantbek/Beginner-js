@@ -1,0 +1,5 @@
+let a = (...elements) => {
+    return Math.min(...elements)
+}
+
+export default a
